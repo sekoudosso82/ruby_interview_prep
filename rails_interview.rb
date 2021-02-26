@@ -30,3 +30,65 @@ For example, we can use a single association to connect the Review
 model with the Event and Restaurant models, allowing us to connect 
 a review with either an event or a restaurant.   
 
+# difference between PUT and POST 
+# what is scaffold in rails ?
+# What is Active Record in rails ?
+# what is a restful api? 
+# what is Redux?
+#  Doker 
+# kukubernate 
+# caching in rails 
+# rake
+# difference between lambda and proc ind ruby 
+    There are only two main differences. First, a lambda 
+    checks the number of arguments passed to it, while a 
+    proc does not. This means that a lambda will throw an 
+    error if you pass it the wrong number of arguments, 
+    whereas a proc will ignore unexpected arguments and 
+    assign nil to any that are missing. 
+
+# difference between after_save and after_create 
+# helper 
+    # What are helpers in Rails?
+        A helper is a method that is (mostly) used in 
+        your Rails views to share reusable code. Rails comes 
+        with a set of built-in helper methods. 
+
+        If you’re looking to write custom helper methods, 
+        the correct directory path is app/helpers.
+
+        You write your helpers inside a helper module.
+
+        Every Rails application comes with a base helper module 
+        by default, it’s called ApplicationHelper. 
+
+
+# csfr
+
+# callback 
+    During the normal operation of a Rails application, objects 
+    may be created, updated, and destroyed. Active Record provides 
+    hooks into this object life cycle so that you can control 
+    your application and its data.
+
+    Callbacks allow you to trigger logic before or after an 
+    alteration of an object''s state. 
+
+    Callbacks are methods that get called at certain moments of 
+    an object''s life cycle. With callbacks it is possible to write 
+    code that will run whenever an Active Record object is created, 
+    saved, updated, deleted, validated, or loaded from the database.  
+    
+    after_create
+    after_save
+        after_save runs both on create and update, but always after the 
+        more specific callbacks after_create and after_update, no matter 
+        the order in which the macro calls were executed. 
+
+
+
+# different methode of caching 
+# salt 
+# what is nosql 
+
+
