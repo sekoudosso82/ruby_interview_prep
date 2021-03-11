@@ -1,5 +1,12 @@
-# what is a call back 
+
 # difference btwn destroy and delete 
+    Basically destroy runs any callbacks on the model while delete 
+    doesn''t. ... The row is simply removed with an SQL DELETE 
+    statement on the record''s primary key, and no callbacks are 
+    executed. To enforce the object''s before_destroy and after_destroy 
+    callbacks or any :dependent association options, use 
+    #destroy. 
+
 # rails life cycle 
 Models for handling data and business logic
 Controllers for handling the user interface and application
@@ -14,6 +21,11 @@ The view is rendered and sent back to the client for the browser to display.
 
 # how to avoid too long controller 
 # testing 
+    We can run all of our tests at once by using the bin/rails test 
+    command. Or we can run a single test file by passing the bin/rails 
+    test command the filename containing the test cases. This will 
+    run all test methods from the test case. 
+
 # how to load faster a rails app 
 # what is a gem 
 # some gems 
@@ -21,7 +33,7 @@ The view is rendered and sent back to the client for the browser to display.
     gem 'bootstrap', '~> 4.1.1'
     gem 'jquery-rails'
     gem 'faker'
-# helper 
+
 # how to scale rails application 
 # polymorphisme 
 In Ruby on Rails, a polymorphic association is an Active Record 
@@ -30,7 +42,12 @@ For example, we can use a single association to connect the Review
 model with the Event and Restaurant models, allowing us to connect 
 a review with either an event or a restaurant.   
 
-# difference between PUT and POST 
+# difference between PUT and POST  
+    PUT is used to send data to a server to create/update a resource. 
+    The difference between POST and PUT is that PUT requests are 
+    idempotent. ... In contrast, calling a POST request repeatedly 
+    have side effects of creating the same resource multiple times.  
+
 # what is scaffold in rails ?
 # What is Active Record in rails ?
 # what is a restful api? 
@@ -47,7 +64,13 @@ a review with either an event or a restaurant.
     whereas a proc will ignore unexpected arguments and 
     assign nil to any that are missing. 
 
-# difference between after_save and after_create 
+# difference between after_save and after_create  
+    The difference between after_create , after_save and after_commit 
+    in Rails is that: after_save is invoked when an object is created 
+    and updated. after_commit is called on create, update and destroy. 
+    after_create is only called when creating an object. 
+
+# helper 
 # helper 
     # What are helpers in Rails?
         A helper is a method that is (mostly) used in 
@@ -63,8 +86,13 @@ a review with either an event or a restaurant.
         by default, it’s called ApplicationHelper. 
 
 
-# csfr
+# csfr  
+    CSRF is an attack that tricks the victim into submitting a 
+    malicious request. It inherits the identity and privileges 
+    of the victim to perform an undesired function on the victim''s 
+    behalf.  
 
+# what is a call back 
 # callback 
     During the normal operation of a Rails application, objects 
     may be created, updated, and destroyed. Active Record provides 
@@ -88,7 +116,62 @@ a review with either an event or a restaurant.
 
 
 # different methode of caching 
+    Model caching.
+    Fragment caching.
+    Action caching.
+    Page caching.
+    HTTP caching.
 # salt 
-# what is nosql 
+# what is nosql   
+    NoSQL databases (aka "not only SQL") are non tabular, and store 
+    data differently than relational tables. NoSQL databases come in 
+    a variety of types based on their data model. ... They provide 
+    flexible schemas and scale easily with large amounts of data and 
+    high user loads.
 
+
+# pros and cons of the mvc 
+    # How does MVC pattern work?
+    MVC is a software design pattern used for designing structures 
+    on web pages and databases.
+    MVC architecture is a software design method that we can use to 
+    easily develop and maintain applications
+
+        MVC patterns separate the input, processing, and output of 
+        an application. This model divided into three interconnected 
+        parts called the model, the view, and the controller. All of 
+        the three above given components are built to handle some 
+        specific development aspects of any web or .net application 
+        development.
+
+        In the MVC application development, the controller receives 
+        all requests for the application and then instructs the model 
+        to prepare any information required by the view. The view uses 
+        that data prepared by the controller to bring the final output.
+    # Advantages of using MVC framework 
+        1. Faster development process: 
+        2. Ability to provide multiple views: 
+        3. Support for asynchronous technique: 
+        4. The modification does not affect the entire model:
+        5. MVC model returns the data without formatting: 
+        6. SEO friendly Development platform: 
+
+        Development of the application becomes fast.
+        Easy for multiple developers to collaborate and work together.
+        Easier to Update the application.
+        Easier to Debug as we have multiple levels properly written in the application.
+
+    # Disadvantages of MVC architecture:
+
+        It is hard to understand the MVC architecture.
+        Must have strict rules on methods.
+
+        There is not much in the disadvantages part of the architecture. 
+        And the disadvantages are not so huge and are very easy to ignore 
+        in comparison with all the benefits we get. 
+
+
+how to avoid fat controller or model 
+development process 
+what do you use for testing? 
 
